@@ -37,6 +37,14 @@ a {
   color: #888888;
 }
 
+#company {
+  color: #36b4df;
+}
+
+#profile{
+  color: #8078e4;
+}
+
 @keyframes change {
   0% {
     color: #0f0;
