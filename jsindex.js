@@ -1,3 +1,4 @@
+
 var Typer = {
   text: "",
   accessCountimer: null,
@@ -94,16 +95,14 @@ function replaceUrls(text) {
     return text;
   }
 }
-
-Typer.speed = 8;
+Typer.speed = 100;
 Typer.file = "sarthak.html";
 Typer.init();
-
 var timer = setInterval("t();", 30);
 function t() {
   Typer.addText({ keyCode: 123748 });
-
   if (Typer.index > Typer.text.length) {
     clearInterval(timer);
   }
+  
 }

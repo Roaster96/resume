@@ -1,24 +1,84 @@
+
 body {
-  background-color: #000;
+  /* background-color: rgb(20, 20, 20);
+   */
+   background-color: #000;
+}
+
+button {
+  transition: all .3s ease;
+  color: PaleGoldenrod;
+  border: 0.2px solid rgb(19, 245, 19);
+  /* font-family:'Montserrat', sans-serif; */
+  /* text-transform: uppercase; */
+  text-align: center;
+  line-height: 1;
+  font-size: 12px;
+  background-color : transparent;
+  padding: 6px;
+  outline: none;
+  border-radius: 10px;
+}
+button:hover {
+  color: PaleGoldenrod;
+  background-color: rgba(1, 255, 1, 0.116);
+}
+
+blink_span{
+  color: #0bc;
+  animation: blink 2s linear infinite;
+}
+@keyframes blink{
+0%{opacity: 0.9;}
+50%{opacity: .5;}
+100%{opacity: 1;}
 }
 
 #console {
   font-family: courier, monospace;
-  color: #fff;
+  /* color: #9c4831; */
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 14px;
+  position:relative;
+}
+
+.wrapper{
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+canvas{
+position: relative;
+height:100%;
+top: 0;
+width:100%;
+}
+
+.introduction-canvas--overflow{
+
+  width:100%;
+  height:100%;
+  position:absolute;
+  top: 0;
+  bottom: auto;
+  display:block;
+
+/*background: linear-gradient(to bottom right,FloralWhite 0%,PapayaWhip 50%,LemonChiffon 100%);*/
+/* background: linear-gradient(to right bottom,rgba(249, 209, 129, 0.95) 0,rgba(244, 203, 137, 0.95) 50%,rgba(245, 234, 134, 0.95) 100%); */
 }
 
 a {
-  color: #0bc;
+  color: MediumSeaGreen	;
   text-decoration: none;
 }
 
 #a {
-  color: #0f0;
+  color:Tomato;
 }
 
 #c {
@@ -26,7 +86,8 @@ a {
 }
 
 #b {
-  color: #ff0096;
+  color:PaleGoldenrod	;
+  font-weight: 500;
 }
 
 #k {
@@ -42,12 +103,39 @@ a {
 }
 
 #profile{
-  color: #8078e4;
+  color: Chocolate;
+}
+
+.animate-charcter
+{
+  background-image: linear-gradient(
+    -225deg,
+    rgb(189, 118, 25) 0%,
+    rgb(227, 140, 221)	 50%,
+    rgb(154, 13, 13) 100%
+  );
+  font-weight: 900;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fafafa;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 15px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 @keyframes change {
   0% {
-    color: #0f0;
+    color: #9c4831;
   }
   50% {
     color: #0f0;
