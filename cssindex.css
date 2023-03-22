@@ -4,7 +4,6 @@ body {
    */
    background-color: #000;
 }
-
 button {
   transition: all .3s ease;
   color: PaleGoldenrod;
@@ -103,7 +102,8 @@ a {
 }
 
 #profile{
-  color: Chocolate;
+  /* color: Chocolate; */
+  color: 	#FFFF00;
 }
 
 .animate-charcter
